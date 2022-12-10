@@ -4,13 +4,15 @@ function doit() {
     let a = document.getElementById('amount').value;
     let b = document.getElementById('from').value;
     let c = document.getElementById('to').value;
+    let result=0;
     if (c == b) {
-        alert(a);
+     result=a;
+     document.getElementById("ip").value=result;
     }
     if (b == "VND" && c == "USD") {
-        alert(a / 24000 + "$")
+
     }
     if (b == "USD" && c == "VND") {
-        alert(a * 24000 + "đ")
+        result=(a*24000)
     }
 }
